@@ -1,0 +1,463 @@
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8">
+/[if IE 8] <html class="no-js lt-ie9">
+/ [if gt IE 8]><!
+%html.no-js
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title SpaceLab
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no", :name => "viewport"}/
+    / Favicon
+    %link{:href => "assets/img/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+    / Bootstrap core CSS
+    / Fonts from Font Awsome
+    / CSS Animate
+    / Custom styles for this theme
+    / Vector Map
+    / ToDos
+    / Morris
+    / Fonts
+    %link{:href => "http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,700", :rel => "stylesheet", :type => "text/css"}/
+    / Feature detection
+    / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    /[if lt IE 9]
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+  %body.animated.fadeIn
+    %section#container
+      %header#header
+        / logo start
+        .brand
+          %a.logo{:href => "index.html"}
+            %span> Space
+            Lab
+        / logo end
+        .toggle-navigation.toggle-left
+          %button#toggle-left.btn.btn-default{"data-placement" => "right", "data-toggle" => "tooltip", :title => "Toggle Navigation", :type => "button"}
+            %i.fa.fa-bars
+        .user-nav
+          %ul
+            %li.dropdown.messages
+              %span#new-messages.badge.badge-danager.animated.bounceIn 5
+              %button#toggle-mail.btn.btn-default.dropdown-toggle.options{"data-toggle" => "dropdown", :type => "button"}
+                %i.fa.fa-envelope
+              %ul.dropdown-menu.alert.animated.fadeInDown
+                %li
+                  %h1
+                    You have
+                    %strong 5
+                    new messages
+                %li
+                  %a{:href => "#"}
+                    .profile-photo
+                      %img.img-circle{:alt => "", :src => "assets/img/avatar.gif"}/
+                    .message-info
+                      %span.sender James Bagian
+                      %span.time 30 mins
+                      .message-content Lorem ipsum dolor sit amet, elit rutrum felis sed erat augue fusce...
+                %li
+                  %a{:href => "#"}
+                    .profile-photo
+                      %img.img-circle{:alt => "", :src => "assets/img/avatar1.gif"}/
+                    .message-info
+                      %span.sender Jeffrey Ashby
+                      %span.time 2 hour
+                      .message-content hendrerit pellentesque, iure tincidunt, faucibus vitae dolor aliquam...
+                %li
+                  %a{:href => "#"}
+                    .profile-photo
+                      %img.img-circle{:alt => "", :src => "assets/img/avatar2.gif"}/
+                    .message-info
+                      %span.sender John Douey
+                      %span.time 3 hours
+                      .message-content Penatibus suspendisse sit pellentesque eu accumsan condimentum nec...
+                %li
+                  %a{:href => "#"}
+                    .profile-photo
+                      %img.img-circle{:alt => "", :src => "assets/img/avatar3.gif"}/
+                    .message-info
+                      %span.sender Ellen Baker
+                      %span.time 7 hours
+                      .message-content Sem dapibus in, orci bibendum faucibus tellus, justo arcu...
+                %li
+                  %a{:href => "#"}
+                    .profile-photo
+                      %img.img-circle{:alt => "", :src => "assets/img/avatar4.gif"}/
+                    .message-info
+                      %span.sender Ivan Bella
+                      %span.time 6 hours
+                      .message-content Curabitur metus faucibus sapien elit, ante molestie sapien...
+                %li
+                  %a{:href => "#"}
+                    Check all messages
+                    %i.fa.fa-angle-right
+            %li.profile-photo
+              %img.img-circle{:alt => "", :src => "assets/img/avatar.png"}/
+            %li.dropdown.settings
+              %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                Mike Adams
+                %i.fa.fa-angle-down
+              %ul.dropdown-menu.animated.fadeInDown
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-user
+                    Profile
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-calendar
+                    Calendar
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-envelope
+                    Inbox
+                    %span#user-inbox.badge.badge-danager 5
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-power-off
+                    Logout
+            %li
+              .toggle-navigation.toggle-right
+                %button#toggle-right.btn.btn-default{:type => "button"}
+                  %i.fa.fa-comment
+      / sidebar left start
+      %aside.sidebar
+        #leftside-navigation.nano
+          %ul.nano-content
+            %li.active
+              %a{:href => "index.html"}
+                %i.fa.fa-dashboard
+                %span Dashboard
+            %li.sub-menu
+              %a{:href => "javascript:void(0);"}
+                %i.fa.fa-cogs
+                %span UI Elements
+                %i.arrow.fa.fa-angle-right.pull-right
+              %ul
+                %li
+                  %a{:href => "ui-alerts-notifications.html"} Alerts & Notifications
+                %li
+                  %a{:href => "ui-panels.html"} Panels
+                %li
+                  %a{:href => "ui-buttons.html"} Buttons
+                %li
+                  %a{:href => "ui-slider-progress.html"} Sliders & Progress
+                %li
+                  %a{:href => "ui-modals-popups.html"} Modals & Popups
+                %li
+                  %a{:href => "ui-icons.html"} Icons
+                %li
+                  %a{:href => "ui-grid.html"} Grid
+                %li
+                  %a{:href => "ui-tabs-accordions.html"} Tabs & Accordions
+                %li
+                  %a{:href => "ui-nestable-list.html"} Nestable Lists
+            %li.sub-menu
+              %a{:href => "javascript:void(0);"}
+                %i.fa.fa-table
+                %span Tables
+                %i.arrow.fa.fa-angle-right.pull-right
+              %ul
+                %li
+                  %a{:href => "tables-basic.html"} Basic Tables
+                %li
+                  %a{:href => "tables-data.html"} Data Tables
+            %li.sub-menu
+              %a{:href => "javascript:void(0);"}
+                %i.fa.fa.fa-tasks
+                %span Forms
+                %i.arrow.fa.fa-angle-right.pull-right
+              %ul
+                %li
+                  %a{:href => "forms-components.html"} Components
+                %li
+                  %a{:href => "forms-validation.html"} Validation
+                %li
+                  %a{:href => "forms-mask.html"} Mask
+                %li
+                  %a{:href => "forms-wizard.html"} Wizard
+                %li
+                  %a{:href => "forms-multiple-file.html"} Multiple File Upload
+                %li
+                  %a{:href => "forms-wysiwyg.html"} WYSIWYG Editor
+            %li.sub-menu
+              %a{:href => "javascript:void(0);"}
+                %i.fa.fa-envelope
+                %span Mail
+                %i.arrow.fa.fa-angle-right.pull-right
+              %ul
+                %li
+                  %a{:href => "mail-inbox.html"} Inbox
+                %li
+                  %a{:href => "mail-compose.html"} Compose Mail
+            %li.sub-menu
+              %a{:href => "javascript:void(0);"}
+                %i.fa.fa-bar-chart-o
+                %span Charts
+                %i.arrow.fa.fa-angle-right.pull-right
+              %ul
+                %li
+                  %a{:href => "charts-chartjs.html"} Chartjs
+                %li
+                  %a{:href => "charts-morris.html"} Morris
+                %li
+                  %a{:href => "charts-c3.html"} C3 Charts
+            %li.sub-menu
+              %a{:href => "javascript:void(0);"}
+                %i.fa.fa-map-marker
+                %span Maps
+                %i.arrow.fa.fa-angle-right.pull-right
+              %ul
+                %li
+                  %a{:href => "map-google.html"} Google Map
+                %li
+                  %a{:href => "map-vector.html"} Vector Map
+            %li.sub-menu
+              %a{:href => "typography.html"}
+                %i.fa.fa-text-height
+                %span Typography
+            %li.sub-menu
+              %a{:href => "javascript:void(0);"}
+                %i.fa.fa-file
+                %span Pages
+                %i.arrow.fa.fa-angle-right.pull-right
+              %ul
+                %li
+                  %a{:href => "pages-blank.html"} Blank Page
+                %li
+                  %a{:href => "pages-login.html"} Login
+                %li
+                  %a{:href => "pages-sign-up.html"} Sign Up
+                %li
+                  %a{:href => "pages-calendar.html"} Calendar
+                %li
+                  %a{:href => "pages-timeline.html"} Timeline
+                %li
+                  %a{:href => "pages-404.html"} 404
+                %li
+                  %a{:href => "pages-500.html"} 500
+      / sidebar left end
+      / main content start
+      %section.main-content-wrapper
+        %section#main-content
+          / tiles start
+          .row
+            .col-md-3.col-sm-6
+              .dashboard-tile.detail.tile-red
+                .content
+                  %h1.text-left.timer{"data-from" => "0", "data-speed" => "2500", "data-to" => "180"}
+                  %p New Users
+                .icon
+                  %i.fa.fa-users
+            .col-md-3.col-sm-6
+              .dashboard-tile.detail.tile-turquoise
+                .content
+                  %h1.text-left.timer{"data-from" => "0", "data-speed" => "2500", "data-to" => "56"}
+                  %p New Comments
+                .icon
+                  %i.fa.fa-comments
+            .col-md-3.col-sm-6
+              .dashboard-tile.detail.tile-blue
+                .content
+                  %h1.text-left.timer{"data-from" => "0", "data-speed" => "2500", "data-to" => "32"}
+                  %p New Messages
+                .icon
+                  %i.fa.fa.fa-envelope
+            .col-md-3.col-sm-6
+              .dashboard-tile.detail.tile-purple
+                .content
+                  %h1.text-left.timer{"data-speed" => "2500", "data-to" => "105"}
+                  %p New Sales
+                .icon
+                  %i.fa.fa-bar-chart-o
+          / tiles end
+          / dashboard charts and map start
+          .row
+            .col-md-6
+              .panel.panel-default
+                .panel-heading
+                  %h3.panel-title Sales for 2014
+                  .actions.pull-right
+                    %i.fa.fa-chevron-down
+                    %i.fa.fa-times
+                .panel-body
+                  #sales-chart{:style => "height: 250px;"}
+            .col-md-6
+              .panel.panel-default
+                .panel-heading
+                  %h3.panel-title Office locations
+                  .actions.pull-right
+                    %i.fa.fa-chevron-down
+                    %i.fa.fa-times
+                .panel-body
+                  #map.map{:style => "height: 250px;"}
+          / dashboard charts and map end
+          / ToDo start
+          .row
+            .col-md-4
+              .panel.panel-default
+                .panel-heading
+                  %h3.panel-title To do list
+                  .actions.pull-right
+                    %i.fa.fa-chevron-down
+                    %i.fa.fa-times
+                .panel-body
+                  .row
+                    .col-md-12
+                      .form-group
+                        %input#new-todo.form-control{:placeholder => "What needs to be done?", :type => "text"}/
+                        %section#main
+                          %ul#todo-list
+                      .form-group
+                        %button#todo-enter.btn.btn-primary.pull-right Submit
+                        #todo-count
+              .row
+                .col-md-12
+                  .panel.panel-default
+                    .panel-heading
+                      %h3.panel-title Server Status
+                      .actions.pull-right
+                        %i.fa.fa-chevron-down
+                        %i.fa.fa-times
+                    .panel-body
+                      %span.sublabel Memory Usage
+                      .progress.progress-striped
+                        .progress-bar.progress-bar-info{:style => "width: 20%"} 20%
+                      / progress
+                      %span.sublabel CPU Usage
+                      .progress.progress-striped
+                        .progress-bar.progress-bar-default{:style => "width: 60%"} 60%
+                      / progress
+                      %span.sublabel Disk Usage
+                      .progress.progress-striped
+                        .progress-bar.progress-bar-primary{:style => "width: 80%"} 80%
+                      / progress
+            .col-md-4
+              .panel.panel-solid-info
+                .panel-heading
+                  %h3.panel-title Weather
+                  .actions.pull-right
+                    %i.fa.fa-chevron-down
+                    %i.fa.fa-times
+                .panel-body
+                  .row
+                    .col-md-6
+                      %h3.text-center.small-thin.uppercase Today
+                      .text-center
+                        %canvas#clear-day{:height => "110", :width => "110"}
+                        %h4 62°C
+                    .col-md-6
+                      %h3.text-center.small-thin.uppercase Tonight
+                      .text-center
+                        %canvas#partly-cloudy-night{:height => "110", :width => "110"}
+                        %h4 44°C
+                .panel-footer
+                  .row
+                    .col-md-2
+                      %h6.text-center.small-thin.uppercase Mon
+                      .text-center
+                        %canvas#partly-cloudy-day{:height => "32", :width => "32"}
+                        %span 48°C
+                    .col-md-2
+                      %h6.text-center.small-thin.uppercase Mon
+                      .text-center
+                        %canvas#rain{:height => "32", :width => "32"}
+                        %span 39°C
+                    .col-md-2
+                      %h6.text-center.small-thin.uppercase Tue
+                      .text-center
+                        %canvas#sleet{:height => "32", :width => "32"}
+                        %span 32°C
+                    .col-md-2
+                      %h6.text-center.small-thin.uppercase Wed
+                      .text-center
+                        %canvas#snow{:height => "32", :width => "32"}
+                        %span 28°C
+                    .col-md-2
+                      %h6.text-center.small-thin.uppercase Thu
+                      .text-center
+                        %canvas#wind{:height => "32", :width => "32"}
+                        %span 40°C
+                    .col-md-2
+                      %h6.text-center.small-thin.uppercase Fri
+                      .text-center
+                        %canvas#fog{:height => "32", :width => "32"}
+                        %span 42°C
+            .col-md-4
+              .panel.panel-default
+                .panel-body
+                  %h4 Browser Summary
+                  #donut-example
+          / ToDo end
+      / main content end
+      / sidebar right start
+      %aside.sidebarRight
+        %div{:id => "rightside-navigation "}
+          .sidebar-heading
+            %i.fa.fa-user
+            Contacts
+          .sidebar-title online
+          .list-contacts
+            %a.list-item{:href => "javascript:void(0)"}
+              .list-item-image
+                %img.img-circle{:src => "assets/img/avatar.gif"}/
+              .list-item-content
+                %h4 James Bagian
+                %p Los Angeles, CA
+              .item-status.item-status-online
+            %a.list-item{:href => "javascript:void(0)"}
+              .list-item-image
+                %img.img-circle{:src => "assets/img/avatar1.gif"}/
+              .list-item-content
+                %h4 Jeffrey Ashby
+                %p New York, NY
+              .item-status.item-status-online
+            %a.list-item{:href => "javascript:void(0)"}
+              .list-item-image
+                %img.img-circle{:src => "assets/img/avatar2.gif"}/
+              .list-item-content
+                %h4 John Douey
+                %p Dallas, TX
+              .item-status.item-status-online
+            %a.list-item{:href => "javascript:void(0)"}
+              .list-item-image
+                %img.img-circle{:src => "assets/img/avatar3.gif"}/
+              .list-item-content
+                %h4 Ellen Baker
+                %p London
+              .item-status.item-status-away
+          .sidebar-title offline
+          .list-contacts
+            %a.list-item{:href => "javascript:void(0)"}
+              .list-item-image
+                %img.img-circle{:src => "assets/img/avatar4.gif"}/
+              .list-item-content
+                %h4 Ivan Bella
+                %p Tokyo, Japan
+              .item-status
+            %a.list-item{:href => "javascript:void(0)"}
+              .list-item-image
+                %img.img-circle{:src => "assets/img/avatar5.gif"}/
+              .list-item-content
+                %h4 Gerald Carr
+                %p Seattle, WA
+              .item-status
+            %a.list-item{:href => "javascript:void(0)"}
+              .list-item-image
+                %img.img-circle{:src => "assets/img/avatar6.gif"}/
+              .list-item-content
+                %h4 Viktor Gorbatko
+                %p Palo Alto, CA
+              .item-status
+      / sidebar right end
+    :javascript
+      $(document).ready(function() {
+          app.timer();
+          app.map();
+          app.weather();
+          app.morrisPie();
+      });
