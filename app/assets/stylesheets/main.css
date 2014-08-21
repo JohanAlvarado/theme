@@ -77,7 +77,7 @@ img {
   min-height: 80px;
   padding: 0 0 0 10px;
   position: relative;
-  background: #1abc9c url('../img/logo.png') no-repeat 25px 26px;
+  background: #1abc9c url('logo.png') no-repeat 25px 26px;
 }
 #header .logo {
   color: #fff;
@@ -482,7 +482,7 @@ img {
   background: #AAA;
 }
 /* ==========================================================================
-   Main Content 
+   Main Content
    ========================================================================== */
 .main-content-wrapper {
   margin-left: 240px;
@@ -2085,7 +2085,7 @@ fieldset[disabled] .btn-warning.active {
   display: inline-block;
 }
 #login-wrapper .logo:before {
-  background-image: url('../img/logo.png');
+  background-image: url('logo.png');
   background-position: left center;
   background-repeat: no-repeat;
   padding: 0 20px;
